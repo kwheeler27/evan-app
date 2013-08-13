@@ -1,0 +1,25 @@
+{
+  "name": "evan-app",
+  "version": "0.0.1",
+  "description": "a website for evan",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "2.5.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kwheeler27/evan-app"
+  },
+  "keywords": [
+    "node",
+    "heroku"
+  ],
+  "author": "Kevin Wheeler"
+}
