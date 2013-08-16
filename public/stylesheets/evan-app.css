@@ -79,3 +79,22 @@ body {
   margin-bottom: -50px;
 }
 
+.thumbnail {
+  padding: 0px;
+  border-radius: 0px;
+}
+
+.test {
+  background-color: black;
+  position: absolute;
+  height: 140px;
+  width: 211px;
+  text-align: center;
+  opacity: 0.5;
+  color: white;
+  display: none;
+}
+
+
+
+
