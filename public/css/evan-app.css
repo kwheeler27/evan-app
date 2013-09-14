@@ -1,0 +1,104 @@
+@back-color: #fffff6;
+
+body { 
+  padding-top: 70px;
+  background-color: @back-color;
+}
+
+
+.img-thumbnail {
+  width: 250px;
+  height: 250px;
+}
+
+.fancybox-skin {
+  background: #000000;
+  padding: 0px;
+  margin: 0px;
+}
+
+.img-test {
+  width: 660px;
+  height: 379px;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+     -moz-border-radius: 23px;
+          border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.carousel-control.right {
+  right: 15px;
+  left: auto;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.navbar {
+  margin-left: 15px;
+  margin-right: 15px;
+  background-color: white;
+  border-bottom: 1px solid #777777;
+}
+
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+  color: #0276FD;
+  background-color: white;
+}
+
+#myCarousel {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-indicators {
+  margin-bottom: -50px;
+}
+
+.thumbnail {
+  padding: 0px;
+  border-radius: 0px;
+}
+
+.test {
+  background-color: black;
+  position: absolute;
+  height: 140px;
+  width: 211px;
+  text-align: center;
+  opacity: 0.5;
+  color: white;
+  display: none;
+}
+
+.col-lg-3, .col-md-3, .col-sm-6, .col-xs-6 {
+  padding: 15px;
+}
+
+
+
+
