@@ -27,19 +27,13 @@ app.get('/stills', function(request, response) {
   response.send(buffer.toString());
 });
 
-app.get('/films', function(request, response) {
+app.get('/movies', function(request, response) {
   console.log(request);
-  var filename = __dirname + '/views/films.html'
+  var filename = __dirname + '/views/movies.html'
   var buffer = fs.readFileSync(filename);
   response.send(buffer.toString());
 });
 
-app.get('/bio', function(request, response) {
-  console.log(request);
-  var filename = __dirname + '/views/bio.html'
-  var buffer = fs.readFileSync(filename);
-  response.send(buffer.toString());
-});
 
 var port = process.env.PORT || 3000;
 app.listen(port, function() {

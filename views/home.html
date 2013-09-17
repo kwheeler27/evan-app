@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     
@@ -9,18 +10,15 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     
     <!-- Bootstrap core CSS -->
-    <link type="text/css" rel="stylesheet" href="/css/bootstrap.css">
-    
+    <link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
     
     <!-- Custom styles for this app -->
     <link type="text/css" rel="stylesheet" href="/css/evan-app.css">
+    <link type="text/css" rel="stylesheet" href="/css/sticky-footer.css">
     
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
-
     <script type="text/javascript" src="/js/bootstrap.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-
+    <script type="text/javascript" src="/js/carousel.js"></script>
     <script>
         
       $(document).ready(function() {
@@ -32,35 +30,40 @@
      
   </head>
   <body>
-    
+    <div id="wrap">  
     <!-- Fixed navbar -->
     <div class="navbar navbar-fixed-top">
+      <div class="top-test">
       <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="/home">Evan Bluestein</a>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div class="navbar-brand">Evan Bluestein</div> <!-- Logo/Brand -->
-        <div class="nav-collapse collapse">
-          <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="/home">Home</a></li>
+        </div> <!-- navbar-header -->
+      </div>
+      </div>
+      <div class="container" id="nav-btm">
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
             <li><a href="/stills">Stills</a></li>
-            <li><a href="/films">Films</a></li>
-            <li><a href="/bio">Bio</a></li>
+            <li><a href="/movies">Movies</a></li>
           </ul>
         </div><!--/.nav-collapse -->
-      </div><!-- /container --> 
+      </div><!--container-->
     </div><!-- /navbar -->
     
-    <div id="myCarousel" class="carousel slide img-test">
+    <div class="container">
+    <div id="myCarousel" class="carousel slide">
       <ol class="carousel-indicators">
         <li data-target="/img/girl-drinking-beer.jpg" data-slide-to="0" class="active"></li>
         <li data-target="/img/old-man.jpg" data-slide-to="0" class="active"></li>
         <li data-target="/img/ivi-cigarette.jpg" data-slide-to="0" class="active"></li>
         <li data-target="/img/mendoza-band.jpg" data-slide-to="0" class="active"></li>
       </ol>
-      <!-- Carousel items -->
+      <!-- Carousel items -->   
       <div class="carousel-inner">
         <div class="active item">
           <img src="/img/girl-drinking-beer.jpg" alt="">
@@ -97,15 +100,19 @@
               Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
             </p>
           </div>  
-        </div>
-        
+        </div>     
       </div><!-- /carousel-inner -->
-      
-     <!-- Carousel nav -->
-     <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-     <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div> <!-- myCarousel -->
-    
+    </div>
+  </div>
+   <!-- footer -->
+    <div class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; Evan Bluestein 2013. All rights reserved.</p>
+      </div>
+    </div>   
     
   </body>
 </html>

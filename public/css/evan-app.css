@@ -1,8 +1,11 @@
 @back-color: #fffff6;
 
 body { 
-  padding-top: 70px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-top: 120px;
   background-color: @back-color;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 
@@ -22,44 +25,16 @@ body {
   height: 379px;
 }
 
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  font-size: 60px;
-  font-weight: 100;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-  background: #222222;
-  border: 3px solid #ffffff;
-  -webkit-border-radius: 23px;
-     -moz-border-radius: 23px;
-          border-radius: 23px;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-.carousel-control.right {
-  right: 15px;
-  left: auto;
-}
-
-.carousel-control:hover,
-.carousel-control:focus {
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
 
 .navbar {
   margin-left: 15px;
   margin-right: 15px;
   background-color: white;
+  border-bottom: 1px solid #777777;
+}
+
+.top-test{
+  padding: 10px 0px;
   border-bottom: 1px solid #777777;
 }
 
@@ -70,13 +45,16 @@ body {
   background-color: white;
 }
 
+.navbar-brand {
+  color: black;
+  font-size: 26px;
+  text-align: center;
+  width: 100%
+}
+
 #myCarousel {
   margin-left: auto;
   margin-right: auto;
-}
-
-.carousel-indicators {
-  margin-bottom: -50px;
 }
 
 .thumbnail {
@@ -99,6 +77,39 @@ body {
   padding: 15px;
 }
 
+.footer {
+  border-top: 1px solid #777777;
+  border-bottom: 1px solid #777777;
+  text-align: center;
+  margin: 20px 0px;;
+}
+
+.footer div p {
+  margin: 5px 0px;
+}
+
+
+.navbar-nav li a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
+  font-size: 20px;
+  text-align: center;
+}
+
+.navbar-header {
+  width: 100%;
+}
+
+/* ADDED for centering navbar items */
+.navbar-collapse ul {
+position:relative;left:50%;float:left;margin-right:0;margin-left:0;
+}
+
+/* ADDED for centering navbar items */
+.navbar-collapse li {
+position:relative;right:50%;float:left;margin:0;list-style:none
+}
 
 
 
