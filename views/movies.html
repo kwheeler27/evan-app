@@ -56,6 +56,16 @@
             var $test_div = $(this).children('div');  
             $test_div.fadeOut('fast');
           });
+          
+          $(".thumbnail")
+          .mouseenter(function() {
+            var $test_div = $(this).children('div');
+            $test_div.fadeIn('fast');
+          })
+          .mouseleave(function() {
+            var $test_div = $(this).children('div');  
+            $test_div.fadeOut('fast');
+          });
       });
     </script>
      
@@ -81,7 +91,7 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="/stills">Stills</a></li>
-            <li><a href="/movies">Movies</a></li>
+            <li><a id="nav-active" href="/movies">Movies</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div><!--container-->
@@ -92,23 +102,39 @@
 
         
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
-          <a class="fancybox fancybox.iframe thumbnail" href="http://player.vimeo.com/video/49837563?theme=none&autoplay=1">
-            <div class="test">
-              <h4>this is a test</h4>
-              <p>One line description</p>
+          <div class="thumbnail">
+          <a id="mov1" class="fancybox fancybox.iframe thumbnail" href="http://player.vimeo.com/video/49837563?theme=none&autoplay=1">
+            <div class="thumb-desc" style="width:100%">
+              <div class="par">
+              <div class="child">
+              <strong>Editor</strong><br>
+              Promo - Comedy Central Latin America
+              </div>
+              </div>
             </div>
-            <img src="http://b.vimeocdn.com/ts/343/679/343679056_1280.jpg" alt="">
+            
+            <img src="http://b.vimeocdn.com/ts/343/679/343679056_1280.jpg" class="img-responsive" alt="Responsive image">
           </a>
+          </div>
         </div>
         
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <a class="fancybox fancybox.iframe thumbnail" href="http://player.vimeo.com/video/38817174?theme=none&autoplay=1">
-            <div class="test">
-              <h4>this is a test</h4>
-              <p>One line description</p>
+          <div class="thumbnail">
+          <a id="mov2" class="fancybox fancybox.iframe thumbnail" href="http://player.vimeo.com/video/38817174?theme=none&autoplay=1">
+            
+            <div class="thumb-desc" style="width:100%">
+              
+              <div class="par">
+              <div class="child">
+              <strong>Director / Editor</strong><br>
+              Morph
+              </div>
+              </div>
             </div>
-            <img src="/img/ivi-cigarette.JPG" alt="">
-          </a>  
+            <img src="/img/ivi-cigarette.JPG" class="img-responsive" alt="Responsive image">
+            
+          </a>
+          </div> 
         </div>
         
       </div>
@@ -116,9 +142,13 @@
        
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <a class="fancybox fancybox.iframe thumbnail" href="http://player.vimeo.com/video//49398301?theme=none&autoplay=1">
-            <div class="test">
-              <h4>this is a test</h4>
-              <p>One line description</p>
+            <div class="thumb-desc" style="width:100%">
+              <div class="par">
+              <div class="child">
+              <strong>Editor</strong><br>
+              Promo - Comedy Central Brazil
+              </div>
+              </div>
             </div>
             <img src="http://b.vimeocdn.com/ts/340/867/340867719_1280.jpg" alt="">
           </a>
@@ -126,9 +156,13 @@
         
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <a class="fancybox fancybox.iframe thumbnail" href="http://player.vimeo.com/video/49318845?theme=none&autoplay=1">
-            <div class="test">
-              <h4>this is a test</h4>
-              <p>One line description</p>
+            <div class="thumb-desc" style="width:100%">
+              <div class="par">
+              <div class="child">
+              <strong>Editor</strong><br>
+              Promo - Comedy Central Latin America
+              </div>
+              </div>
             </div>
             <img src="http://b.vimeocdn.com/ts/340/300/340300068_1280.jpg" alt="">
           </a>
@@ -140,7 +174,7 @@
    <!-- footer -->
     <div class="footer">
       <div class="container text-muted">
-        <p class="text-muted">&copy; Evan Bluestein 2013. All rights reserved.</p>
+        <p class="text-muted" style="display:inline;">&copy; Evan Bluestein 2013. All rights reserved.</p><p style="display:inline;">  info@evanbluestein.com</p>
       </div>
     </div>
     
