@@ -1,7 +1,8 @@
 @font-face
 {
-font-family: HWGothic;
-src: local(HWGothic),  url(/fonts/HWYGWDE.TTF) format('opentype');
+  font-family: HWGothic;
+  src: url('fonts/HWYGWDE.TTF') format('truetype'),
+       url('fonts/hwygwde.otf') format('opentype');
 }
 
 
