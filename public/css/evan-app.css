@@ -1,17 +1,21 @@
 @font-face
 {
 font-family: HWGothic;
-src: url(/fonts/HWYGWDE.TTF);
+src: local(HWGothic),  url(/fonts/HWYGWDE.TTF) format('opentype');
 }
 
 
 body { 
-  margin-left: 65px;
-  margin-right: 65px;
-  padding-top: 140px;
+  margin-left: 90px;
+  margin-right: 90px;
   font-family: HWGothic;
 }
 
+.container {
+  margin-left:0px;
+  margin-right:0px;
+  max-width: 100%;
+}
 
 .img-thumbnail {
   width: 250px;
@@ -31,14 +35,14 @@ body {
 
 
 .navbar {
-  margin-left: 65px;
-  margin-right: 65px;
+  margin-top: 20px;
   background-color: white;
   border-bottom: 1px solid #777777;
+  border-top: 1px solid #777777;
 }
 
 .item img {
-  width: 750px;
+  width:auto;
 }
 .top-test{
   padding: 10px 0px;
@@ -55,8 +59,7 @@ body {
 .navbar-brand {
   color: black;
   font-size: 26px;
-  text-align: center;
-  width: 100%
+  display: inline-block;
 }
 
 .navbar-brand:hover {
@@ -86,7 +89,7 @@ body {
   display: none;
   height: 50%;
   top: 50%;
-  background: rgba(100,100,100,0.6)
+  background: rgba(0,0,0,0.4)
 }
 
 .parent {
@@ -109,7 +112,7 @@ body {
   border-top: 1px solid #777777;
   border-bottom: 1px solid #777777;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .footer div p {
@@ -117,11 +120,9 @@ body {
 }
 
 .navbar-nav li a {
-  padding-top: 5px;
-  padding-bottom: 5px;
+
   color: #7e7e7e;
   font-size: 20px;
-  text-align: center;
 }
 
 .navbar-nav li a:hover {
@@ -137,25 +138,9 @@ body {
   color: #7e7e7e;
 }
 
-.navbar-header {
-  width: 100%;
-}
-
-/* ADDED for centering navbar items */
-.navbar-collapse ul {
-position:relative;left:50%;float:left;margin-right:0;margin-left:0;
-}
-
-/* ADDED for centering navbar items */
-.navbar-collapse li {
-position:relative;right:50%;float:left;margin:0;list-style:none
-}
-
 .footer-spacer {
   height: 20px;
 }
-
-
 
 .navbar-toggle {
   border: 1px solid #6e6e6e;
@@ -168,6 +153,51 @@ position:relative;right:50%;float:left;margin:0;list-style:none
 
 .icon-bar {
   background-color: #9e9e9e;
+}
+
+.outer-carousel {
+  padding: 0px;
+   
+}
+
+.top-row { 
+  margin-top: -10px;
+}
+
+.bottom-row { 
+  margin-bottom: -10px;
+}
+
+.col-lg-3, .col-md-3, .col-sm-6, .col-xs-6 {
+  padding: 10px;
+  
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus {
+  border-color: #888;
+}
+
+.thumbnail > img {
+  height: auto;
+}
+
+#vim-btn {
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  border: none;
+  opacity: 0.45;
+}
+
+#vim-btn > img {
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.vim-btn:hover {
+  opacity: 1;
 }
 
 

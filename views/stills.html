@@ -15,7 +15,7 @@
     
     <!-- Custom styles for this app -->
     <link type="text/css" rel="stylesheet" href="/css/evan-app.css">
-    <link type="text/css" rel="stylesheet" href="/css/sticky-footer.css">
+    <!-- <link type="text/css" rel="stylesheet" href="/css/sticky-footer.css"> -->
 
     <script type="text/javascript" src="/js/bootstrap.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
@@ -56,35 +56,33 @@
     <div id="wrap">
     <!-- Fixed navbar -->
     <!-- Fixed navbar -->
-    <div class="navbar navbar-fixed-top">
-      <div class="top-test">
+     <div class="navbar navbar-static-top">
+
       <div class="container">
         <div class="navbar-header">
-        <a class="navbar-brand" href="/home">Evan Bluestein</a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <a class="navbar-brand" href="/home">Evan Bluestein</a>
         </div> <!-- navbar-header -->
-      </div>
-      </div>
-      <div class="container" id="nav-btm">
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a id="nav-active" href="/stills">Stills</a></li>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/stills">Stills</a></li>
             <li><a href="/movies">Movies</a></li>
+            <li><a href="#" id="vim-btn" type="button" class="btn btn-default"><img src="/img/vimeo-btn.jpeg" alt=""></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div><!--container-->
-    </div><!-- /navbar -->
+    </div><!-- /navbar-static-top -->
 
     <div>
     
       <!-- Main component for a primary marketing message or call to action -->
 
       <!-- ROW 1 -->
-      <div class="row">   
+      <div class="row top-row">   
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
           <a class="fancybox thumbnail" href="/img/girl-drinking-beer.jpg">
             <div class="thumb-desc">
@@ -218,7 +216,7 @@
       
       <!-- ROW 4 -->
       
-      <div class="row">
+      <div class="row bottom-row">
 
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
           <a class="fancybox thumbnail" href="/img/roof.jpg">
@@ -257,6 +255,7 @@
       <div class="container">
         <p class="text-muted" style="display:inline;">&copy; Evan Bluestein 2013. All rights reserved.</p><p style="display:inline;">  info@evanbluestein.com</p>
       </div>
-    </div> 
+    </div>
+    <div class="footer-spacer"></div>   
   </body>
 </html>
